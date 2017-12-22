@@ -5,7 +5,7 @@ const path = require('path');
 app.set('views', path.join(__dirname, 'views')); // specify the views directory
 app.set('view engine', 'pug'); // register the template engine
 
-app.use(express.static(path.join(__dirname, 'public')));//lets the front end get resources
+app.use('/rsc',express.static(path.join(__dirname, 'public')));//lets the front end get resources
 
 app.get('/',function(req,res)
 {
@@ -17,4 +17,4 @@ app.use(function(err,req,res,next)
     res.send(err.toString());
 });
 
-app.listen('80');
+app.listen('3001');
