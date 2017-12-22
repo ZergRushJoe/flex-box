@@ -6,13 +6,13 @@ html
             ul#tabs
             div#controls
         div#view-window
-        template#flexbox-controller
-            div
+        template#selectionTemplate
+            div.selectionController
                 span flex-direction
                 select
-                    option(value="row") row
-                    option(value="row-reverse") row-reverse
-                    option(value="column") column
-                    option(value="column-reverse") column-reverse
-        script(src="rsc/js/test.js")
+        template#selectionOptionTemplate
+            option(value="{{value}}") {{displayName}}
+
+
+        script(src="rsc/js/basicFunctions.js")
         script(src="rsc/js/main.js")

@@ -1,0 +1,1 @@
+baseFunctions.alert('test');
