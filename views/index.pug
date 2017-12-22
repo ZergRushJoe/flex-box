@@ -1,6 +1,18 @@
 html
     head
-        link(rel="stylesheet" type="text/css" href="css/main.css")
+        link(rel="stylesheet" type="text/css" href="rsc/css/main.css")
     body
-        h1 hello
-        script(src="js/main.js")
+        div#menu
+            ul#tabs
+            div#controls
+        div#view-window
+        template#flexbox-controller
+            div
+                span flex-direction
+                select
+                    option(value="row") row
+                    option(value="row-reverse") row-reverse
+                    option(value="column") column
+                    option(value="column-reverse") column-reverse
+        script(src="rsc/js/test.js")
+        script(src="rsc/js/main.js")
